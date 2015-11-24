@@ -1,0 +1,91 @@
+* {
+  font-family: Tahoma;
+
+}
+
+body{
+    background: url("../content/images/site/newbackgroundTest.jpg") no-repeat top center;
+
+}
+#container {
+  width: 1024px;
+  height: 2972px;
+  margin-left: auto;
+  margin-right: auto;
+    margin-top: 0; }
+
+#header {
+  height: 237px;
+  margin-top: 0;
+  float: right;
+  margin-right: 0; }
+  #header ul {
+    font-size: 13px;
+    font-family: Tahoma;
+    list-style: none; }
+    #header ul li {
+      color: #b3b3b3;
+      display: inline-block;
+      border-right: 1px solid #b3b3b3;
+      padding-right: 8px;
+      padding-left: 8px;
+      transition: color 0.5s ease;
+      -webkit-transition: color 0.5s ease;
+      -moz-transition: color 0.5s ease;
+      -ms-transition: color 0.5s ease;
+      -o-transition: color 0.5s ease;
+      transition: color 0.5s ease; }
+    #header ul li:last-child {
+      border-right: none;
+      padding-right: 0; }
+    #header ul li:hover {
+      color: black; }
+      #header ul li:hover a {
+        color: #b3b3b3;
+        text-decoration: none; }
+
+#radio ul {
+  border: 1px solid blue;
+  display: inline-block;
+  background-color: #b3b3b3;
+  margin-top: 50px;
+  border-radius: 20px; }
+  #radio ul li {
+    padding: 20px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-right: 1px solid blue; }
+  #radio ul li:last-child {
+    border-right: none; }
+
+#listen ul {
+  border: 1px solid blue;
+  display: inline-block;
+  padding: 10px;
+  background-color: #b3b3b3;
+  margin-top: 50px; }
+  #listen ul li {
+    display: inline-block; }
+
+#menu ul {
+  list-style-type: none;
+  border: 3px solid white;
+  margin-top: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 40px;
+  background: #f6bf24;
+  background: -moz-linear-gradient(top, #f6bf24 11%, #ffe970 50%, #ffffff 82%);
+  background: -webkit-linear-gradient(top, #f6bf24 11%, #ffe970 50%, #ffffff 82%);
+  background: linear-gradient(to bottom, #f6bf24 11%, #ffe970 50%, #ffffff 82%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6bf24', endColorstr='#ffffff',GradientType=0 ); }
+  #menu ul li {
+    display: inline;
+    margin-top: 20px;
+    margin-left: 20px; }
+
+.active {
+  font-weight: bold; }
+
+/*# sourceMappingURL=main.css.map */
