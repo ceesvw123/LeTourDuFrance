@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>Tour Top 100 - Radio 1</title>
 
     <!-- JS -->
@@ -10,44 +10,60 @@
     <script src="js/script.js"></script>
 
     <!-- CSS -->
-    <link href="style/main.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
 </head>
 <body>
-<div id="container">
-    <div id="header">
+<header>
+    <div class="wrap clearfix">
+        <div class="subnav">
             <ul>
                 <li>nieuwsbrief</li>
                 <li>mobiel</li>
-                <li>contact</li>
-                <li>meld frecuenties</li>
+                <li>meld een fout</li>
+                <li>frequenties</li>
                 <li>help</li>
                 <li>rss</li>
             </ul>
-    </div>
-    <!--<div id="radio">
-        <ul>
-            <li>RADIO.NL</li>
-            <li>TOUR TOP 100</li>
-            <li><input type="text" ></li>
+        </div>
+        <h1 class="logo">
+            <a href="?page=home&day=<?php echo $currentDay; ?>"></a>
+        </h1>
+
+        <div class="subTitle"><img src="img/tourtop100.png"></div>
+
+        <ul class="nav">
+            <li class="radio"><a href="?page=home">Radio1.NL</a></li>
+            <li class="tour"><a href="?page=tour100">Tour Top 100</a></li>
+            <li class="search">
+                <form id="searchform" method="post" action="?page=search">
+                    <input type="text" name="srchtxt" id="srchtxt" class="srchtxt" placeholder="zoek binnen Radio 1">
+                    <input type="submit" name="submit" class="search_btn">
+                </form>
+            </li>
         </ul>
+        <a href="http://www.npo.nl/radio"><img src="img/luisterlivemee.png" class="float"></a>
+
     </div>
-    <div id="listen">
-        <ul>
-            <li>LUISTER LIVE PRAAT MEE</li>
-        </ul>
-    </div>-->
-    <div id="menu" style="padding-top: 234px;">
-        <ul>
-            <li>JULI</li>
-        <?php
-        $currentDay = date("j");
-            for($i = 2; $i < 25; $i++) {
+</header>
+<div class="container wrap clearfix">
+    <div class="calender">
+        <div class="calender_inner">
+            <h3>JULI</h3>
+
+            <?php
+
+            //haal de menu items op. Zorg ervoor dat je niet verder kunt klikken dan de huidige dag. Alle voorgaande dagen krijgen een andere kleur
+
+            for ($i = 2; $i <= 24; $i++) {
                 if ($currentDay == $i) {
-                    echo '<li class="active"><a href="?p=datums&dag=' . $i . '" title="Dag ' . $i . '">' . $i . '</a></li> ';
+                    echo '<a href="?page=home&day=' . $i . '"><input class="pagenation_current pageBtn active" type="button" value="' . $i . '"></a>';
+                } else if ($currentDay > $i) {
+                    echo '<a href="?page=home&day=' . $i . '"><input class="pagenation_current pageBtn finished" type="button" value="' . $i . '"></a>';
                 } else {
-                    echo '<li><a href="?p=datums&dag=' . $i . '" title="Dag ' . $i . '">' . $i . '</a></li> ';
+                    echo '<a href="#" onclick="dayAlert(' . $i . ');"><input class="pagenation_current pageBtn" type="button" value="' . $i . '"></a>';
                 }
             }
-        ?>
-        </ul>
+            ?>
+
+        </div>
     </div>

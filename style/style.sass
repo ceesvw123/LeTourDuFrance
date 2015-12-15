@@ -1,0 +1,617 @@
+*
+  margin: 0
+  padding: 0
+  color: #333
+  text-decoration: none
+  list-style: none
+  font: 15px/1.5 Arial, HELVETICA, sans-serif
+
+footer
+  bottom: 0
+  width: 100%
+  height: 41px
+  background: rgb(85, 85, 85)
+  background: -moz-linear-gradient(top, rgba(85, 85, 85, 1) 0%, rgba(85, 85, 85, 1) 27%, rgba(46, 46, 46, 1) 72%, rgba(46, 46, 46, 1) 94%, rgb(163, 163, 163) 96%, rgba(46, 46, 46, 1) 98%)
+  background: -webkit-linear-gradient(top, rgba(85, 85, 85, 1) 0%, rgba(85, 85, 85, 1) 27%, rgba(46, 46, 46, 1) 72%, rgba(46, 46, 46, 1) 94%, rgb(163, 163, 163) 96%, rgba(46, 46, 46, 1) 98%)
+  background: linear-gradient(to bottom, rgba(85, 85, 85, 1) 0%, rgba(85, 85, 85, 1) 27%, rgba(46, 46, 46, 1) 72%, rgba(46, 46, 46, 1) 94%, rgb(163, 163, 163) 96%, rgba(46, 46, 46, 1) 98%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#555555', endColorstr='#2e2e2e', GradientType=0)
+  text-align: center
+  li
+    color: #bebebe
+    text-align: center
+    border-right: 1px solid #474747
+    display: inline-block
+    padding-right: 13px
+    padding-left: 7px
+    margin-top: 8px
+    -webkit-transition: color 0.5s ease
+    -moz-transition: color 0.5s ease
+    -ms-transition: color 0.5s ease
+    -o-transition: color 0.5s ease
+    &:last-child
+      border-right: 0px solid white
+    &:hover
+      color: white
+
+#title
+  font-weight: 900
+
+#date
+  color: #999999
+
+#content
+  padding-top: 15px
+  padding-bottom: 15px
+
+#warning
+  color: #09b5e7
+  padding-bottom: 15px
+  width: 800px
+  a
+    widows: 500px
+
+.comment
+  border-bottom: 1px dotted #333
+  margin-bottom: 15px
+
+#dynamic-image
+  background: url('../img/banner3.jpg')
+  height: 115px
+
+#dynamic-text
+  padding-top: 72px
+  width: 220px
+
+.white
+  color: #ffffff
+  padding-left: 10px
+  padding-bottom: 10px
+  padding-top: 10px
+  background-color: black
+  opacity: 0.7
+
+.twitter-timeline, .timeline, .width
+  max-width: 230px
+
+#question
+  font-size: 22px
+  font-weight: bold
+  span
+    font-size: 22px
+    font-weight: bold
+    color: #e40101
+
+.bold
+  font-weight: bold
+
+.alert
+  text-align: center
+  background-color: rgba(255, 0, 0, 0.86)
+  color: white
+  width: 100%
+  padding-top: 10px
+  padding-bottom: 10px
+  font-weight: bold
+  margin-bottom: 20px
+  border-radius: 13px
+  font-size: 17px
+
+.good
+  text-align: center
+  background-color: forestgreen
+  color: white
+  width: 100%
+  padding-top: 10px
+  padding-bottom: 10px
+  font-weight: bold
+  margin-bottom: 20px
+  border-radius: 20px
+  border-radius: 13px
+  font-size: 17px
+
+/*=============home==============
+
+.nav .radio
+  background: url('../img/mainNav.png') no-repeat 0 0
+  float: left
+  &:hover
+    background-position: 0 -38px
+
+.radio a
+  width: 125px
+
+.nav .tour
+  background: url('../img/mainNav.png') no-repeat -125px 0
+  float: left
+  &:hover
+    background-position: -125px -38px
+
+.tour a
+  width: 127px
+
+.radio a, .tour a
+  display: inline-block
+  height: 38px
+  text-indent: -999em
+
+.search
+  #searchform
+    float: left
+    background: url('../img/mainNav.png') no-repeat -252px 0
+    width: 168px
+    height: 38px
+    input
+      float: left
+      border: 0
+      background: none
+      margin-top: 8px
+      font-size: 12px
+  .srchtxt
+    width: 123px
+    height: 21px
+    margin-left: 9px
+    font-size: 1px
+    padding: 0 5px
+  .search_btn
+    text-indent: -999em
+    height: 21px
+    width: 25px
+    cursor: pointer
+
+.container
+  background: #fff
+  border-radius: 10px 10px 0 0
+  padding-bottom: 50px
+  .calender
+    background: url("../img/calender_bg.png") no-repeat
+    background-size: 100%
+    height: 40px
+    margin-bottom: 30px
+
+.calender_inner
+  margin-left: 50px
+
+.calender h3
+  float: left
+  font-size: 20px
+  font-weight: bold
+  letter-spacing: 5px
+  line-height: 20px
+  margin-top: 11px
+
+.calender_inner a
+  float: left
+  width: 36px
+  height: 18px
+  margin-top: 11px
+  border-width: 0 1px 0 0
+  border-right-style: solid
+  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(60, 60, 60, 0.64)), to(rgba(0, 0, 0, 0))) 1 100%
+  -webkit-border-image: -webkit-linear-gradient(rgba(60, 60, 60, 0.64), rgba(0, 0, 0, 0)) 1 100%
+  -moz-border-image: -moz-linear-gradient(rgba(60, 60, 60, 0.64), rgba(0, 0, 0, 0)) 1 100%
+  border-image: linear-gradient(to bottom, rgba(60, 60, 60, 0.64), rgba(0, 0, 0, 0)) 1 100%
+
+.calender .pageBtn
+  width: 38px
+  height: 35px
+  line-height: 39px
+  font-size: 20px
+  font-weight: bold
+  margin-top: -9px
+  cursor: pointer
+  background: none
+  position: relative
+
+.pageBtn.finished
+  background: -webkit-linear-gradient(to bottom, #535353, #b2b2b2, #fff)
+  background: -o-linear-gradient(to bottom, #535353, #b2b2b2, #fff)
+  background: -moz-linear-gradient(to bottom, #535353, #b2b2b2, #fff)
+  background: linear-gradient(to bottom, #535353, #b2b2b2, #fff)
+
+input[type=button]
+  border: none
+  outline: none
+
+.clearfix:after
+  visibility: hidden
+  display: block
+  font-size: 0
+  content: " "
+  clear: both
+  height: 0
+
+body
+  background: url("../img/bg.png") no-repeat
+  background-size: 100%
+
+.wrap
+  width: 1077px
+  margin: 0 auto
+
+.subnav
+  width: 100%
+  float: right
+  margin: 15px 0 20px
+  ul
+    float: right
+  li
+    &:first-child
+      border: none
+    display: inline
+    border-left: 1px solid #bbb
+    color: #bbb
+    padding: 0 5px 0 8px
+    font-size: 12px
+    transition: color 0.5s ease
+    -webkit-transition: color 0.5s ease
+    -moz-transition: color 0.5s ease
+    -ms-transition: color 0.5s ease
+    -o-transition: color 0.5s ease
+    &:hover
+      color: #474747
+
+.pageBtn
+  &.finished:hover
+    border: 2px solid red
+  &.active
+    background: #FFF
+    border: 2px solid #F00
+    line-height: 35px
+    left: -1px
+    width: 39px
+
+.container .list
+  float: left
+  padding: 0 45px 0 39px
+  width: 740px
+
+.pageTitle
+  width: 740px
+  float: left
+  margin: 0 0 20px 30px
+  padding-left: 15px
+
+h2
+  color: #e40101
+  font-size: 20px
+  font-weight: bold
+  border-bottom: 1px dotted #333
+  padding-bottom: 5px
+  margin: 20px 0
+
+/*=====home list style========
+
+.home
+  li
+    margin-bottom: 50px
+  .song_img
+    width: 250px
+    float: left
+    margin-right: 25px
+    position: relative
+
+.song_img i
+  background: url('../img/icons.png') no-repeat 0 0
+  position: fixed
+  height: 68px
+  width: 70px
+  left: 90px
+  top: 50px
+
+.home .song_img img
+  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.35)
+
+.rank
+  font-size: 18px
+  font-weight: bold
+  height: 45px
+
+.home
+  .song_tit a
+    font-size: 18px
+    font-weight: bold
+    height: 45px
+  .rank
+    float: left
+
+.top100 .rank
+  float: left
+
+.rank
+  background: #e40101
+  color: #FFF
+  width: 40px
+  height: 35px
+  line-height: 35px
+  text-align: center
+
+.home .song_tit a
+  display: inline-block
+  margin-left: 10px
+  max-width: 400px
+  margin-bottom: 10px
+
+.bnrs_tit a
+  display: inline-block
+  max-width: 400px
+  margin-bottom: 10px
+  font-size: 18px
+  font-weight: bold
+  height: 45px
+
+.home .song_descr
+  height: 95px
+  overflow: hidden
+  font-size: 13px
+
+header
+  margin-bottom: 40px
+  .logo
+    background: url("../img/logo.png") no-repeat
+    float: left
+    margin-right: 60px
+    a
+      width: 150px
+      height: 147px
+      text-indent: -999em
+      display: inline-block
+  .subTitle
+    display: inline-block
+    margin: 10px 0 25px
+
+.c_icon
+  float: left
+  width: 50px
+  margin-right: 5px
+  p
+    margin-top: 5px
+    color: #07b5e7
+    &::after
+      height: 15px
+      border-left: 1px solid #333
+      content: ''
+      position: absolute
+      margin: 5px 0 0 5px
+      width: .5px
+
+.song_bot .c_icon i
+  background: url('../img/icons.png') no-repeat 0 -92px
+  width: 22px
+  height: 23px
+  display: inline-block
+  float: left
+  margin-right: 5px
+
+.facebook
+  background: url('../img/icons.png') no-repeat 0 -136px
+  width: 22px
+  height: 22px
+  display: inline-block
+  float: left
+  margin-right: 5px
+
+.twitter
+  background: url('../img/icons.png') no-repeat 0 -114px
+  width: 22px
+  height: 22px
+  display: inline-block
+  float: left
+  margin-right: 5px
+
+.mail
+  background: url('../img/icons.png') no-repeat 0 -70px
+  width: 22px
+  height: 22px
+  display: inline-block
+  float: left
+  margin-right: 5px
+
+.social
+  float: right
+
+.home .more
+  font-weight: bold
+  font-size: 10px
+  margin-top: 10px
+  display: inline-block
+  width: 75px
+  color: #07b5e7
+
+.more i
+  background: url('../img/icons.png') no-repeat -23px -69px
+  width: 10px
+  height: 9px
+  overflow: hidden
+  position: absolute
+  margin: 4.5px 0 0 5px
+
+/*===============songPage================
+
+.songMenu
+  float: left
+  width: 28%
+  margin-top: 30px
+  &:nth-child(2)
+    width: 44%
+    margin-top: 0
+  .rank
+    font-size: 15px
+    width: 30px
+    height: 25px
+    line-height: 25px
+    float: left
+    margin-right: 8px
+
+.songPage .songMenu
+  &:nth-child(2)
+    .rank
+      float: none
+      display: block
+      margin: 0 auto
+      padding: 8px
+      font-size: 20px
+    h3
+      text-align: center
+      pointer-events: none
+      cursor: default
+  h3:hover
+    text-decoration: underline
+
+.rank
+  display: inline-block
+
+.song_media
+  height: 400px
+  padding: 20px
+  margin-top: 10px
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3)
+
+.songMenu .song_tit a
+  font-weight: bold
+
+.songPage .song_descr
+  margin-top: 30px
+
+.commentsForm
+  margin: 20px 0 30px
+  form
+    width: 540px
+  label
+    display: block
+    text-indent: 1em
+    font-weight: bold
+    span
+      color: #bbb
+  input
+    width: 250px
+    margin-bottom: 10px
+    box-shadow: inset 0 0 0 rgba(51, 51, 51, 0.41)
+
+input[type='checkbox']
+  width: 20px
+
+.checkbox
+  width: 200px
+  float: left
+  margin-top: 15px
+  text-indent: 0
+
+.commentsForm textarea
+  max-width: 500px
+  width: 100%
+  height: 150px
+
+.submitCom
+  float: right
+  background: url('../img/icons.png') no-repeat 10px -158px
+  margin-top: 15px
+
+#submitBtn
+  cursor: pointer
+  height: 22px
+  width: 82px
+  text-indent: -999em
+  border: 0
+  background: none
+  margin: 0
+
+.commentsForm, .comments
+  text-indent: 10px
+
+.reactions
+  text-indent: 10px
+  margin-bottom: 20px
+
+.comments
+  border-bottom: 1px dotted
+  margin-bottom: 20px
+  &:nth-child(3)
+    border: none
+
+.com_tit
+  font-weight: bold
+
+.com_created
+  font-weight: bold
+  color: rgba(102, 102, 102, 0.79)
+
+.com_content
+  margin: 15px 0
+
+.comments-btn
+  width: 15%
+  margin: 20px auto
+
+.commentBtn
+  width: 25px
+  height: 25px
+  background: #bbb
+  &.active
+    background: #ff0
+    cursor: pointer
+    &:hover
+      background: #FFF
+      border: 2px solid #F00
+
+.warning
+  position: relative
+  i
+    width: 15px
+    height: 15px
+    position: absolute
+    background: url('../img/icons.png') no-repeat -22px -101px
+    bottom: 4px
+  span
+    color: #58AEEE
+    margin-left: 22px
+    font-weight: bold
+
+/*===============songPage================
+
+.col_right
+  padding: 0 10px
+  margin-top: 27px
+  display: inline-block
+  div
+    width: 100%
+    margin-bottom: 20px
+    max-width: 230px
+
+/*===========top100===================
+
+.top100screenlogo
+  margin-bottom: -30px
+
+.top100item
+  height: 35px
+  div
+    padding-left: 60px
+    margin-left: 9px
+    border-bottom: 1px dotted #000
+    height: 100%
+    a
+      font-weight: bold
+      line-height: 40px
+  .rank
+    background: #333
+  &.active .rank
+    background: #e40101
+
+.top100 .top100item
+  &:nth-child(95) .rank
+    margin-left: 8px
+  &:nth-child(2) .rank, &:nth-child(9) .rank, &:nth-child(20) .rank, &:nth-child(27) .rank, &:nth-child(38) .rank, &:nth-child(45) .rank, &:nth-child(56) .rank, &:nth-child(63) .rank, &:nth-child(84) .rank, &:nth-child(89) .rank, &:nth-child(91) .rank
+    margin-left: 9px
+  &:nth-child(3) .rank, &:nth-child(21) .rank, &:nth-child(39) .rank, &:nth-child(57) .rank, &:nth-child(85) .rank
+    margin-left: 1px
+  &:nth-child(4) .rank, &:nth-child(7) .rank, &:nth-child(12) .rank, &:nth-child(14) .rank, &:nth-child(16) .rank, &:nth-child(19) .rank, &:nth-child(22) .rank, &:nth-child(25) .rank, &:nth-child(30) .rank, &:nth-child(32) .rank, &:nth-child(34) .rank, &:nth-child(37) .rank, &:nth-child(40) .rank, &:nth-child(43) .rank, &:nth-child(48) .rank, &:nth-child(50) .rank, &:nth-child(52) .rank, &:nth-child(55) .rank, &:nth-child(58) .rank, &:nth-child(61) .rank, &:nth-child(66) .rank, &:nth-child(68) .rank, &:nth-child(70) .rank, &:nth-child(73) .rank, &:nth-child(75) .rank, &:nth-child(77) .rank, &:nth-child(80) .rank, &:nth-child(83) .rank, &:nth-child(86) .rank, &:nth-child(88) .rank, &:nth-child(94) .rank, &:nth-child(96) .rank, &:nth-child(98) .rank, &:nth-child(101) .rank
+    margin-left: 3px
+  &:nth-child(5) .rank, &:nth-child(11) .rank, &:nth-child(23) .rank, &:nth-child(29) .rank, &:nth-child(41) .rank, &:nth-child(47) .rank, &:nth-child(59) .rank, &:nth-child(65) .rank, &:nth-child(87) .rank, &:nth-child(93) .rank
+    margin-left: 10px
+  &:nth-child(6) .rank, &:nth-child(13) .rank, &:nth-child(17) .rank, &:nth-child(24) .rank, &:nth-child(31) .rank, &:nth-child(35) .rank, &:nth-child(42) .rank, &:nth-child(49) .rank, &:nth-child(53) .rank, &:nth-child(60) .rank, &:nth-child(67) .rank, &:nth-child(71) .rank, &:nth-child(74) .rank, &:nth-child(78) .rank, &:nth-child(81) .rank, &:nth-child(99) .rank
+    margin-left: 6px
+  &:nth-child(10) .rank, &:nth-child(18) .rank, &:nth-child(28) .rank, &:nth-child(36) .rank, &:nth-child(46) .rank, &:nth-child(54) .rank, &:nth-child(64) .rank, &:nth-child(72) .rank, &:nth-child(79) .rank, &:nth-child(82) .rank, &:nth-child(92) .rank, &:nth-child(100) .rank
+    margin-left: 2px
+
+.float
+  float: right
